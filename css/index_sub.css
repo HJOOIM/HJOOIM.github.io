@@ -1,0 +1,313 @@
+
+
+  
+    
+       @font-face {
+        font-family: 'NanumBarunGothic';
+        font-style: normal;
+        font-weight: 300;
+        src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+       
+       }
+       
+       .nanumbarungothic * {
+        font-family: 'NanumBarunGothic', sans-serif;
+       }
+       @font-face {
+        font-family: 'InfinitySans-RegularA1';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/InfinitySans-RegularA1.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+   
+    
+        *{margin: 0; padding: 0;}
+        #wrap{width: 100%; margin: 0 auto; 
+              position: relative; background-color: rgb(240,239,235);}
+        body{ font-family: 'NanumBarunGothic', sans-serif; font-style: normal; font-weight: 300;}      
+    /*---------------------------------------------------------------------------*/
+
+        .navi{ width: 100%; background-color: rgb(240,239,235); 
+        position: fixed; top: 0; z-index: 2; padding-bottom: 15px;} 
+
+        nav{ width: 100%;  overflow: hidden; }
+        
+
+        .menu1{ float: left; padding-left: 60px; padding-top: 15px; padding-right: 30px;}
+        .menu3{ float: right; padding: 15px 0px 20px ; margin-right: 60px;}
+        .menu2{ float: right; padding: 15px 30px 20px 0;}
+
+        /*---------------------------------------------------------------------------*/
+        #menuicon{ display: none;}
+
+        #menuicon+label{
+                        position: absolute;
+                        cursor: pointer;
+                        display: block;
+                        transition: all .35s;
+                        z-index: 999;}
+
+        .icon-change{ position: absolute; top: 0; left: 0;
+         opacity: 0;}
+
+        #menuicon:checked+label .icon-origin{ display: none;}
+        #menuicon:checked+label .icon-change{opacity: 1;
+                                                position: fixed; 
+                                                top: 0;
+                                                left: 270px;
+                                                background-color:rgba(255,255,255,0.8);
+                                                padding: 5px;}
+
+        .sidebar{width: 270px; height: auto; background-color: rgba(233,207,200,0.8);
+                position: absolute; top: 0; left: -1000px; padding-bottom: 100px;
+                z-index: 2; }
+        #menuicon:checked+label+div{left: 0;}
+
+        
+        .logo{float: left; }
+
+        .top-category{width:100px;margin: 0 auto; text-align: center; font-family: "THE정고딕130",'Jeju Gothic', sans-serif;}
+
+        .top-category > a{ text-decoration: none; color: black;}
+
+        .aside-logo{ margin: 35px 0 0 20px;}
+    
+        .abata{ width: 80px; margin: 0 auto; padding: 30px 0;}
+    
+        .abata img{ width: 80px;}
+    
+        .start{width: 100px; margin: 0 auto; padding-bottom: 50px;}
+    
+        .aside-menu ul li{ display: block; list-style: none; padding: 20px; text-align: center;}
+    
+        .aside-menu ul li a{ display: block; text-decoration: none; color: white; text-shadow: 1px 1px 1px rgba(0, 0, 0  , 0.2);
+                        font-family: 'NanumSquare', sans-serif,'나눔고딕'; font-size: 14pt;}
+    
+        .aside-menu ul li:hover{ background-color:rgba(240,239,235,0.5);}
+    
+        .aside-bottom > .left{ position: absolute; bottom: 1%; left: 2%; }
+    
+        .aside-bottom > .right{ position: absolute; bottom: 1%; right: 2%; }
+    /*---------------------------------------------------------------------------*/    
+
+        header{ padding-top: 100px;}
+        
+        #carousel-img{width: 300px; border-top-right-radius:25px ;
+                          height: 420px;}
+        #carousel-img:nth-child(1){ margin-left: 10%;}
+
+
+        #carousel{ max-width: 1920px; width: 100%; 
+                   margin: 0 auto; background-color: rgb(113,135,149);}
+
+                   #carousel > h1{ text-align: center; font-size: 1.6rem; font-family: 'NanumBarunGothic', sans-serif;}
+        
+        
+        
+        .item{ display: inline-block;
+        vertical-align: top;
+        width: 33.3%;}
+        
+        .item>a{ display: block;
+        width: auto;
+        text-decoration: none;
+        margin: 5px;}
+        
+        .item>a .screen{position: relative;
+                        width: 200%;   
+}
+        .item>a .screen .top{
+        position: absolute;
+        bottom: 150%;
+        left: 65%;
+        z-index: 2;
+        color: #fff;
+        font-size: 12pt;
+        font-weight: 900;
+        transition: all .5s;
+        text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+        .item>a .screen .top img{ width: 30px;}
+        
+        .item a .screen .bottom{
+        position: absolute;
+        top: 150%;
+        left: 50%;
+        z-index: 2;
+        color: #fff;
+        font-size: 12px;
+        transition: all .5s;
+}
+        .item>a .screen img{
+        width: 100%;
+}
+        .item>a h3{
+        font-size: 14px;
+        text-align: center;
+        padding: 20px;
+        color: #666;
+}
+        .item>a:hover .top{
+        bottom: 52%;
+}
+        .item>a:hover .bottom{
+        top: 52%;
+}
+        .item>a:hover .screen::after{
+        opacity: 1;
+}
+        #carousel h3{ font-family: 'Abel', sans-serif; letter-spacing: 2px;
+                      text-align: center; margin: 30px ; padding-top: 30px;
+                      font-size: 1.5rem;}
+        /*---------------------------------------------------------------------------*/
+
+        section{ width: 1320px; background-color: rgb(240,239,235); height: 2800px; margin: 0 auto; margin-top: 50px;}
+
+
+
+
+.Writer{ width: 100%; background-color: white; height: 350px; padding-bottom: 50px; padding-top: 50px; }
+.writer-title{ width: 250px; height: 250px; float: left; margin-top: 100px; margin: 0 40px 0 110px; font-size: 1.8rem; font-family: 'NanumBarunGothic', sans-serif;}
+.writer-box{ width: 250px; height: 250px; background-color: rgba(221, 221, 221,0.5); float: left; margin-top: 100px; margin-right: 20px;
+            text-align: center; font-family: 'InfinitySans-RegularA1'; font-weight: lighter; font-style: normal; font-size: 11pt; color: rgb(90,90,90);}
+.profile{ width: 120px; height: 120px; background-color: white; margin: 0 auto; border-radius: 50%; margin-top: 20px; overflow: hidden;}
+
+.profile>img{ width: 100%; height: 100%; object-fit: cover;}
+
+
+.article{ width: 100%; height: 630px; background-color: rgb(233,207,200);  padding-top: 50px;
+        font-family: 'InfinitySans-RegularA1'; overflow: hidden; position: relative;}
+.slick-list{ margin-left: 0;}
+        .slick-next{ position: absolute; top: 400px; right: 10px ; width: 45px; }
+        .slick-prev{ position: absolute; top: 400px; left: 10px; width: 45px; }                
+
+.article > h1{ font-size: 1.6rem; text-align: center; font-family: 'NanumBarunGothic', sans-serif;}
+
+.review-box{ width: 300px; height: 420px; background-color: rgb(224,190,180); float: left; margin-left: 24px;
+    position: relative; margin-top: 20px; overflow: hidden;}
+
+.img-box{ width: 300px; height: 450px; background-color:white; overflow: hidden; }
+.img-box>img{object-fit:cover; width: 100%; height: 100%; transition: transform 1.5s; }
+.img-box:hover img{ transform: scale(1.2); opacity: 0.5;}
+
+.review-box > #txt{ overflow: hidden;  text-align: justify; padding: 20px; 
+                font-size: 13pt; font-weight: normal; color: rgb(90,90,90);
+                position: absolute; top: 300px; width: 250px;}
+#txt a{ text-decoration: none; color: rgb(60, 60, 60); text-shadow: 0 0 1px rgba(255,255,255,0.8);}
+
+.one{ width: 40px; height: 40px; border-radius: 50%; background-image: url(../image/33.png);
+        background-size: contain; position: absolute; top: 370px; left: 245px;}  
+.one2{ width: 40px; height: 40px; border-radius: 50%; background-image: url(../image/22.jpg);
+        background-size: contain; position: absolute; top: 370px; left: 245px;}
+.one3{ width: 40px; height: 40px; border-radius: 50%; background-image: url(../image/song.jpg);
+        background-size: contain; position: absolute; top: 370px; left: 245px;}
+.one4{width: 40px; height: 40px; border-radius: 50%; background-image: url(../image/44.jpg);
+        background-size: contain; position: absolute; top: 370px; left: 245px;}                                              
+.name{ position: absolute; top: 380px; left: 180px; font-size: 10pt;}
+.name2{ position: absolute; top: 380px; left: 200px; font-size: 10pt;}
+.name3{ position: absolute; top: 380px; left: 190px; font-size: 10pt;}
+        
+
+.bottom-title{ width: 100%; height: 50px; text-align: center; margin-top: 200px; font-size: 1.2rem; padding-bottom: 20px;}
+
+.title{ text-align: center; width: 100%; height: 100px; background-color: white;}
+.title ul li{ list-style: none; display: inline-block; padding: 10px 20px; border: 3px solid rgb(113,135,149); border-radius: 25px;
+            margin: 50px 10px 10px;}
+.title ul li a{ text-decoration: none;  color:rgb(90,90,90); }
+
+.content{ width: 100%; margin: 0 auto; background-color: white; padding-top: 100px; height: 1200px;}
+.col-content{ width: 950px; float: left;}
+
+.content-box{ width: 800px; height: 250px; background-color: white;  margin:0 0 30px 120px; border: 1px solid rgb(221, 221, 221);}
+
+.content-box > .img-conbox{ width: 140px; height:200px; background-color: white; float: right; margin: 25px 25px;  border-top-right-radius:25px ;}
+
+.img-conbox>img{ width: 100%; height: 100%; object-fit: cover; transition: transform 1.5s;}
+
+.img-conbox:hover>img{ transform: translate(35%,-35%) scale(1.7); border-top-right-radius: 25px;}
+
+
+.txt-conbox{ overflow: hidden; float: left; width: 550px; 
+                font-family:'NanumBarunGothic', sans-serif,'나눔고딕'; 
+                font-size: 13pt; font-style:normal; font-weight: 300;
+                text-align: left; margin-left: 20px; line-height: 30px; color: #333;}
+
+.txt-conbox > h3 > a{ text-decoration: none; color: rgb(90,90,90);}
+.txt-conbox > h3 >a:hover{ border-bottom: 1px solid rgb(137,137,137);}
+.txt-conbox > h3{ padding: 40px 10px 10px; font-size: 18pt;}
+.txt-conbox > p{ padding: 10px 0 20px 10px;}
+.txt-conbox > p >span{ float: right; font-size: 10pt; color: rgb(90,90,90); font-weight: normal;}
+
+
+/*********************/
+
+.aside{ width: 150px;  float: left; margin-left: 10%;
+                background-color: rgba(208,212,211,0.3);
+               margin-top: 200px; 
+                overflow: hidden;
+        position: fixed;
+        top: 300px;
+        right: 15%;
+        display: none;}
+        .aside ul li{ list-style: none; display: block; 
+                      padding: 10px 20px;}
+
+        .side-img{ float: left; width: 30%; margin-right: 10px;}
+        .side-txt{ font-size: 9pt; color: rgb(137,137,137); font-family: 'NanumBarunGothic';}
+        .side-txt span{ color: rgb(90,90,90);}
+
+    /*---------------------------------------------------------------------------*/    
+        .bottom-scroll{ display: block;
+                        width: 50px;
+                        text-align: center;
+                        margin: 0 auto;}
+        
+        .go_top{ 
+                position: fixed;
+                right: 30px;
+                bottom: 30px;
+                color: rgba(113,135,149,0.8);
+                text-decoration: none;
+                display: none;}
+        .go_top i{ font-size: 35px;} 
+
+
+        
+        @media all and (max-width:1024px){
+                #carousel-img{width: 165px; border-top-right-radius:25px ;
+                        height: 250px;}
+
+                section{width: 834px;}
+
+                .writer-box{ width: 160px; height: 250px; font-size: 10pt;             
+        }
+                .writer-title{ width: 100px; height: 100px; margin-left: 40px;}
+                
+                .profile{ width: 110px; height: 110px;}
+                .article{ height: 530px;}
+                .review-box{ width: 200px; height: 300px; background-color: rgb(224,190,180); float: left; margin-left: 24px;
+                        position: relative; margin-top: 20px; overflow: hidden;}
+
+                .img-box{ width: 200px; height: 300px; background-color:white; overflow: hidden; }
+
+                .slick-next{ position: absolute; top: 300px; }
+                .slick-prev{ position: absolute; top: 300px; }  
+
+                .review-box > #txt{ font-size: 10pt;
+                        position: absolute; top: 180px; width: 150px;}
+        
+        .one{ width: 40px; height: 40px; top: 250px; left: 145px;}  
+        .one2{  width: 40px; height: 40px; top: 250px; left: 145px;}
+        .one3{  width: 40px; height: 40px; top: 250px; left: 145px;}       
+        .one4{ width: 40px; height: 40px; top: 250px; left: 145px;}
+                
+        .col-content{ width: 830px; }
+
+        .content-box{ width: 800px; height: 250px; margin:0 0 30px 15px; }
+        .img-conbox:hover>img{ transform: scale(1.5); border-top-right-radius: 0;}
+
+
+         .aside ul li{ display: none;}
+         .aside{ width: 0;}
+         
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Review</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/slick.css"/>
+    <link rel="sytlesheet" href="css/slick-theme.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="./fullpage.min.css" />
+    <script src="js/fullpage.min.js"></script>
+
+</head>
+<body>
+    <div id="wrap">
+
+        <div id="navi">
+            <nav>
+            <div class="menu1">
+                <input type="checkbox" id="menuicon">
+                <label for="menuicon">
+                    <img src="icon/ccc.png" alt="menu" width="25px" class="icon-origin">
+                    <img src="icon/icon_menuchange.png" width="20px" class="icon-change">
+                </label>
+                <div class="sidebar">
+                <div class="aside-logo"><img src="icon/logo_sub.png" alt="aside"></div>
+                <div class="abata"><img src="icon/icon_sub_aside.png" alt="aside"></div>
+                <div class="start"><img src="icon/icon_aside_start.png"></div>
+                <div class="aside-menu">
+                    <ul>
+                        <li><a href="#">나의책장</a></li>
+                        <li><a href="#">읽은서평</a></li>
+                        <li><a href="#">관심서평</a></li>
+                        <li><a href="#">도서구매</a></li>
+                    </ul>
+                </div>
+                <div class="aside-bottom">
+                    <div class="left"><a href="#"><img src="icon/icon_menu_bottom1.png" width="35"></a></div>
+                    <div class="right"><a href="#"><img src="icon/icon_menu_bottom2.png" width="35"></a></div>
+                </div>    
+    
+                </div>
+            </div>
+            <div class="logo"><a href="index.html"><img src="icon/logo_main.png" ></a></div>
+            
+           
+            <div class="menu2"><a href="#"><img src="icon/icon_top.png" width="25px" height="25px"></a></div>
+        </nav>
+        </div>
+
+        <div id="full-page">
+        <div class="section s0">
+           
+          <header>
+            <div class="slider">
+            <div class="back-img"><img src="image/books.jpg" alt="background"></div>
+            <div class="back-img"><img src="image/books-2.jpg" alt="background"></div>
+            <div class="back-img"><img src="image/books-3.jpg" alt="background"></div>
+        </div>
+            <div class="Qbox">
+                <div class="icon"><img src="icon/icon_sub_top.png" width="25" height="25"></div>
+                <p class="Qtxt">검색어를 입력하세요 :)</p></div>
+           <div class="mouse"><img src="icon/icon_main_scroll.png"></div> 
+           
+           <div id="main-title"><span> Every Book review !</span></div>
+            </header>
+        
+        </div>
+
+        <div class="section s1">
+            
+            <section>
+                <h3>B O O K &nbsp; C A T E G O R Y</h3>
+                <div class="ctg1">
+            
+                    <a href="index_sub.html">소설</a>
+                    <a href="#">시/에세이</a>
+                    <a href="#">인문</a>
+                    <a href="#">역사/문화</a>
+                    <a href="#">종교</a>
+                    <a href="#">예술</a>           
+                    <a href="#">자기계발</a>
+                    <a href="#">경제/경영</a>
+                    <a href="#">사회/정치</a>
+                    <a href="#">과학</a>
+                    <a href="#">기술</a>
+                    <a href="#">IT</a>        
+                    <a href="#">여행</a>
+                    <a href="#">취미</a>
+                    <a href="#">요리</a>
+                    <a href="#">건강</a>
+                    <a href="#">가정/육아</a>
+                    <a href="#">외국도서</a>
+                </div>
+               
+            </section>
+        
+            <footer>
+                <div class="foot">
+                <div class="foot-img"><img src="icon/logo_main.png" width="110px"></div>
+                    <div class="foot-txt">
+                        <a href="#">이용안내 |</a>
+                        <a href="#">이용약관 |</a>
+                        <a href="#">개인정보처리방침 |</a>
+                        <a href="#">이용정책 |</a>
+                        <a href="#">청소년보호정책 |</a>
+                        <a href="#">고객센터 |</a>
+                        </div>
+                <p>&copy; <span>BookReview Corp</span></p></div>
+            </footer>
+        </div>
+    </div>
+    
+    </div><!--wrap end-->
+    <a href="#" class="go_top">
+        <i class="far fa-arrow-alt-circle-up"></i>
+    </a>
+    
+    
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/slick.js"></script>
+        <script src="js/index_sub.js"></script>
+    <script>
+        new fullpage('#full-page',{});
+
+        $(function(){
+                $('.slider').slick({
+                    slide: 'div',
+                    infinite: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    speed: 1000,
+                    autoplay: true,
+                    vertical: false,
+                    arrows: false,
+                    prevArrow:$('prev'),
+                    autoplaySpeed: 3000,
+                    pauseOnHover: false
+                    
+
+                });
+            });
+    </script>
+    
+
+    
+</body>
+</html>
